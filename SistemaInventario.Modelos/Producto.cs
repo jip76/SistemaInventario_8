@@ -30,7 +30,7 @@ namespace SistemaInventario.Modelos
         public int CategoriaId { get; set; }
         [ForeignKey("CategoriaId")]
         public Categoria Categoria { get; set; }
-        [Required(ErrorMessage = "Categoria es Requerido")]
+        [Required(ErrorMessage = "Marca es Requerido")]
         public int MarcaId { get; set; }
         [ForeignKey("MarcaId")]
         public Marca Marca { get; set; }
